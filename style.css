@@ -1,0 +1,65 @@
+/* Basic navbar styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f2f2f2;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+  }
+  
+  .nav-links a:hover {
+    background-color: #ddd;
+  }
+  
+  .logo {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .menu-toggle {
+    display: none;
+  }
+  
+  .menu-toggle-icon {
+    /* Style the hamburger icon here */
+  }
+  
+  /* Responsive styles using media queries */
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      display: none;
+    }
+  
+    .nav-links li {
+      margin: 0;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  
+    .menu-toggle:hover .menu-toggle-icon {
+      /* Add hover effects for icon here */
+    }
+  }
+  
+  /* Change styles for even smaller screens if needed */
+  @media (max-width: 480px) {
+    /* ... */
+  }
